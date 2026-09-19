@@ -1,0 +1,22 @@
+paths:
+  raw_data_dir: "data/raw"
+  processed_data_dir: "data/processed"
+  output_dir: "outputs"
+
+financials:
+  net_interest_margin: 0.12  # 12% interest income margin on repaid loans
+  loss_given_default: 0.70   # 70% unrecoverable loss on defaulted principal
+
+model_params:
+  lgbm:
+    objective: "binary"
+    metric: "auc"
+    boosting_type: "gbdt"
+    learning_rate: 0.03
+    num_leaves: 31
+    max_depth: 6
+    feature_fraction: 0.8
+    bagging_fraction: 0.8
+    bagging_freq: 1
+    verbose: -1
+    random_state: 42

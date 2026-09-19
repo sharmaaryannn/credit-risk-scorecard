@@ -1,0 +1,19 @@
+# Virtual Environment
+venv/
+.venv/
+env/
+
+# Python Cache
+__pycache__/
+*.py[cod]
+
+# IDE Settings
+.vscode/
+.idea/
+
+# Raw & Processed Data Files
+data/raw/*
+!data/raw/.gitkeep
+
+# Output artifacts
+outputs/*.csv
